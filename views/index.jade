@@ -1,5 +1,43 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .main
+    .title
+      |The Zine
+  .content
+    form(action="/" method="POST")
+      .row
+        label
+          .label
+            |Title
+          .inputs
+            input.inputField(name="title" type="text")
+      .row
+        label
+          .label
+            |Background URL
+          .inputs
+            input.inputField(name="background" type="text")
+      .row
+        label
+          .label
+          .inputs
+            input(name="excerpt" type="checkbox")
+            | Background image has dark colors
+      .row
+        label
+          .label
+            |Excerpt
+          .inputs
+            textarea.inputText(name="excerpt" type="text")
+      .row
+        label
+          .label
+            |Body
+          .inputs
+            textarea.inputText(name="body" type="text")
+      .row
+        .label
+        .inputs
+          input.submit(type="submit" value="add article")
+      
