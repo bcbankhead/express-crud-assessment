@@ -81,5 +81,12 @@ router.get('/articles/:id/delete', function(req, res, next) {
   })
 });
 
+router.get('/articles/view/:id', function(req, res, next) {
+  articles.findOne({ _id: req.params.id }, function(err, data){
+    data.text = data.text.replace(/\r\n/g,"<p>");
+    res.render('view', { articles: data });
+  })
+});
+
 
 module.exports = router;

@@ -3,9 +3,9 @@ extends layout
 block content
   .main
     .title
-      |The Zine
-    .action
-        |Add New Article
+      a(href="/") The Zine
+  .action
+      |Add New Article
   .contentWhite
     form(action="/" method="POST")
       .row
@@ -82,4 +82,7 @@ block content
         .label
         .inputs
           input.submit(type="submit" value="add article")
+        .cancel
+          a(href="/") cancel
+
       

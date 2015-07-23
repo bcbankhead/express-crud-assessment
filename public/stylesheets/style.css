@@ -37,6 +37,19 @@ a {
   font-weight: bold;
 }
 
+.title a{
+  color: rgb(0, 0, 0);
+  font: 30px Arial, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.title a:hover{
+  color: rgb(0, 255, 255);
+  font: 30px Arial, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
 
 .content {
   margin:0 auto;
@@ -190,7 +203,7 @@ a {
   margin-right: 10px;
   height: 22px;
   width: 193px;
-  background-color: rgb(255, 155, 155);
+  background-color: rgb(105, 105, 105);
   cursor: pointer;
   transition: all .3s;
 }

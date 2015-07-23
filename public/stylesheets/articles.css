@@ -72,6 +72,20 @@
   overflow:hidden;
 }
 
+.articleText {
+  box-sizing: border-box;
+  margin-top:0px;
+  margin-bottom:15px;
+  border:0px solid black;
+  padding:20px;
+  max-width:900px;
+  max-height:900px;
+  background-color: rgb(255, 255, 255);
+  font-family: serif;
+  text-align: justify;
+  overflow:auto;
+}
+
 
 .articleTitleText {
   display:inline-block;
@@ -108,10 +122,13 @@
 }
 
 .action {
+  margin:0 auto;
+  padding:0px;
+  box-sizing: border-box;
   border:0px solid black;
-  padding-left:20px;
-  margin-top:30px;
-  vertical-align: bottom;
+  max-width:900px;
+  min-width:600px;
+  color: rgb(255, 255, 255);
   font-size: 20px;
   font-weight: bold;
 }

@@ -3,9 +3,9 @@ extends layout
 block content
   .main
     .title
-      |The Zine
-    .action
-        |Edit Article | #{articles.title} 
+      a(href="/") The Zine
+  .action
+      |Edit Article | #{articles.title} 
   .contentWhite
     form(action="/articles/"+articles._id method="POST")
       .row
@@ -72,7 +72,7 @@ block content
           .inputs
           if errors
             if errors.text
-              textarea.textarea.inputTextError(name="text" type="text")= articles.text
+              textarea.inputTextError(name="text" type="text")= articles.text
               .errors
                 = errors.text
             else

@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  .main
+    .title
+      a(href="/") The Zine
+  .content
+    .row
+      if articles.dark  == 'on'
+        .articleTitleWhite(style='background-image: url('+articles.bkg+'); background-size: 1000px  background-position: 50% 30%')
+          .articleTitleText
+            a(href='articles/view/'+articles._id)= articles.title
+          .articleEdit
+            a.white(href='/articles/'+articles._id+'/edit') Edit
+      else 
+        .articleTitleBlack(style='background-image: url('+articles.bkg+'); background-size: 1000px; background-position: 50% 30%')
+          .articleTitleText
+            a(href='articles/view/'+articles._id)= articles.title
+          .articleEdit
+            a.black(href='/articles/'+articles._id+'/edit') Edit
+      .articleText
+        !{articles.text}
