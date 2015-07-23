@@ -1,0 +1,93 @@
+extends layout
+
+block content
+  .main
+    .title
+      |The Zine
+    .action
+        |Edit Article | #{articles.title} 
+  .contentWhite
+    form(action="/articles/"+articles._id method="POST")
+      .row
+        label
+          .label
+            |Title
+          .inputs
+          if errors
+            if errors.title
+              input.inputFieldError(name="title" type="text" autofocus value= articles.title)
+              .errors
+                = errors.title
+            else
+              input.inputField(name="title" type="text" autofocus value= articles.title)
+              .errors
+          else
+            input.inputField(name="title" type="text" autofocus value= articles.title)
+            .errors
+      .row
+        label
+          .label
+            |Background URL
+          .inputs
+          if errors
+            if errors.bkg
+              input.inputFieldError(name="bkg" type="text" value= articles.bkg)
+              .errors
+                = errors.bkg
+            else
+              input.inputField(name="bkg" type="text" value= articles.bkg)
+              .errors
+          else
+            input.inputField(name="bkg" type="text" value= articles.bkg)
+            .errors
+      .row
+        label
+          .label
+          .inputs
+            if articles.dark
+              input(name="dark" type="checkbox" checked) 
+            else
+              input(name="dark" type="checkbox") 
+            | Background image has dark colors
+      .row
+        label
+          .label
+            |Excerpt
+          .inputs
+          if errors
+            if errors.excerpt
+              textarea.inputTextError(name="excerpt" type="text")= articles.excerpt
+              .errors
+                = errors.excerpt
+            else
+              textarea.inputText(name="excerpt" type="text")= articles.excerpt
+              .errors
+          else
+            textarea.inputText(name="excerpt" type="text")= articles.excerpt
+            .errors
+      .row
+        label
+          .label
+            |Body
+          .inputs
+          if errors
+            if errors.text
+              textarea.textarea.inputTextError(name="text" type="text")= articles.text
+              .errors
+                = errors.text
+            else
+              textarea.inputText(name="text" type="text")= articles.text
+              .errors
+          else
+            textarea.inputText(name="text" type="text")= articles.text
+            .errors
+      .row
+        .label
+        .inputs
+          input.submit(type="submit" value="Update Article")
+          .cancel
+            a(href="/") cancel
+          .delete
+            a(href='/articles/'+articles._id+'/delete') delete
+
+      

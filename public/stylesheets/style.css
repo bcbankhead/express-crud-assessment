@@ -40,15 +40,26 @@ a {
 
 .content {
   margin:0 auto;
-  padding-left:25px;
-  padding-top:15px;
+  padding:0px;
   box-sizing: border-box;
-  border:1px solid black;
+  border:0px solid black;
+  max-width:900px;
+  min-width:600px;
+  height: 600px;
+  /*background-color: rgb(255, 255, 255);*/
+}
+
+.contentWhite {
+  margin:0 auto;
+  padding:20px;
+  box-sizing: border-box;
+  border:0px solid black;
   max-width:900px;
   min-width:600px;
   height: 600px;
   background-color: rgb(255, 255, 255);
 }
+
 
 .row {
   box-sizing: border-box;
@@ -74,27 +85,166 @@ a {
   display:inline-block;
   border:1px solid black;
   box-sizing: border-box;
+  padding-left:10px;
   width: 600px;
   min-width: 400px;
   height: 22px;
+}
+
+.inputFieldError {
+  display:inline-block;
+  border:1px solid black;
+  box-sizing: border-box;
+  padding-left:10px;
+  background-color: rgb(255, 210, 210);
+  width: 600px;
+  min-width: 400px;
+  height: 22px;
+}
+.errors {
+  border: 0px solid black;
+  margin-left:180px;
+  margin-bottom:5px;
+  display:inline-block;
+  color: rgb(255, 0, 0);
+  font-size: 12px;
 }
 
 .inputText {
   display:inline-block;
   border:1px solid black;
   box-sizing: border-box;
+  padding-left:10px;
   width: 600px;
   min-width: 400px;
-  height: 150px;
+  height: 100px;
   resize: none;
+}
 
+.inputTextError {
+  display:inline-block;
+  border:1px solid black;
+  padding-left:10px;
+  box-sizing: border-box;
+  background-color: rgb(255, 210, 210);
+  width: 600px;
+  min-width: 400px;
+  height: 100px;
+  resize: none;
 }
 
 .submit {
   display:inline-block;
   border:1px solid black;
   box-sizing: border-box;
+  margin-right: 10px;
   margin-bottom:15px;
   height: 22px;
-  width: 200px;
+  width: 193px;
+  font-size: 12px;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all .3s;
+  background-color: rgb(195, 195, 195);
+}
+
+.submit:hover {
+  display:inline-block;
+  border:1px solid black;
+  box-sizing: border-box;
+  margin-right: 10px;
+  margin-bottom:15px;
+  height: 22px;
+  width: 193px;
+  font-size: 12px;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: rgb(155, 255, 155);
+  transition: all .3s;
+}
+
+.cancel {
+  text-align: center;
+  vertical-align: top;
+  display:inline-block;
+  border:1px solid black;
+  box-sizing: border-box;
+  margin-bottom:15px;
+  margin-right: 10px;
+  height: 22px;
+  width: 193px;
+  background-color: rgb(155, 155, 155);
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.cancel:hover {
+  text-align: center;
+  vertical-align: top;
+  display:inline-block;
+  border:1px solid black;
+  box-sizing: border-box;
+  margin-bottom:15px;
+  margin-right: 10px;
+  height: 22px;
+  width: 193px;
+  background-color: rgb(255, 155, 155);
+  cursor: pointer;
+  transition: all .3s;
+}
+
+
+.cancel a{
+  display:inline-block;
+  height: 22px;
+  width: 193px;
+  padding-top:3px;
+  vertical-align: middle;
+  font-size: 12px;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.delete {
+  text-align: center;
+  vertical-align: top;
+  display:inline-block;
+  border:1px solid black;
+  box-sizing: border-box;
+  margin-bottom:15px;
+  height: 22px;
+  width: 193px;
+  background-color: rgb(255, 155, 155);
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.delete:hover {
+  text-align: center;
+  vertical-align: top;
+  display:inline-block;
+  border:1px solid black;
+  box-sizing: border-box;
+  margin-bottom:15px;
+  height: 22px;
+  width: 193px;
+  background-color: rgb(255, 0, 0);
+  cursor: pointer;
+  transition: all .3s;
+}
+
+
+.delete a{
+  display:inline-block;
+  height: 22px;
+  width: 193px;
+  padding-top:3px;
+  vertical-align: middle;
+  font-size: 12px;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }

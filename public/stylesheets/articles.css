@@ -1,0 +1,117 @@
+.articleTitleWhite {
+  text-shadow: 1px 1px 1px #000;
+  font-weight:bold;
+  font-size:16px;
+  color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  border:0px solid black;
+  padding-left: 10px;
+  vertical-align: top;
+  max-width:900px;
+  height: 45px;
+  clear:both;
+  box-sizing: border-box;
+}
+
+.articleTitleWhite a{
+  text-shadow: 1px 1px 1px #777;
+  font-weight:bold;
+  font-size:16px;
+  color: rgb(255,255,255);
+}
+
+.articleTitleWhite a:hover{
+  text-shadow: 1px 1px 1px #777;
+  font-weight:bold;
+  font-size:16px;
+  color:rgb(100, 255, 255);
+}
+
+
+.articleTitleBlack {
+  text-shadow: 1px 1px 1px #777;
+  font-weight:bold;
+  font-size:16px;
+  color: rgb(0,0,0);
+  box-sizing: border-box;
+  border:0px solid black;
+  padding-left: 10px;
+  vertical-align: top;
+  max-width:900px;
+  height: 45px;
+  clear:both;
+  box-sizing: border-box;
+}
+
+.articleTitleBlack a{
+  text-shadow: 1px 1px 1px #777;
+  font-weight:bold;
+  font-size:16px;
+  color: rgb(0,0,0);
+}
+
+.articleTitleBlack a:hover{
+  text-shadow: 1px 1px 1px #777;
+  font-weight:bold;
+  font-size:16px;
+  color:rgb(100, 255, 255);
+}
+
+
+.articleExcerpt {
+  box-sizing: border-box;
+  margin-top:0px;
+  margin-bottom:15px;
+  border:0px solid black;
+  padding:20px;
+  max-width:900px;
+  height:100px;
+  background-color: rgb(255, 255, 255);
+  font-family: serif;
+  text-align: justify;
+  overflow:hidden;
+}
+
+
+.articleTitleText {
+  display:inline-block;
+  margin-top:15px;
+  border:0px solid black;
+  float:left;
+}
+
+.articleEdit {
+  display:inline-block;
+  margin-top:15px;
+  margin-right:10px;
+  border:0px solid black;
+  float:right;
+}
+
+.black{
+  text-shadow: 1px 1px 0px #777;
+  color:rgb(0, 0, 0);
+}
+
+.black:hover{
+  color:rgb(255, 100, 100);
+
+}
+
+.white{
+  text-shadow: 1px 1px 1px #000;
+  color:rgb(255, 255, 255);
+}
+
+.white:hover{
+  color:rgb(255, 100, 100);
+}
+
+.action {
+  border:0px solid black;
+  padding-left:20px;
+  margin-top:30px;
+  vertical-align: bottom;
+  font-size: 20px;
+  font-weight: bold;
+}
